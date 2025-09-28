@@ -142,16 +142,7 @@ function updateCartModal() {
         (product) => `
                                     <div style="padding: 1rem; border-bottom: 1px solid #eee; display: flex;  flex-direction: column; justify-content: space-between; align-items: center;">
                                              <div style="width:100%; display:flex; justify-content: end; align-items: center; margin-bottom: 10px;">
-                    <button onclick="removeFromCart('${product.id}')" style="
-                                                                       cursor: pointer; 
-                                "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" />
-                        </svg></button>
-                </div>
+                                 </div>
                 <div style="width:100%; display:flex; justify-content: space-between; align-items: center;">
              <div>
                                     <div style=" font-size: 20px;
