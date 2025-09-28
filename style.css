@@ -250,6 +250,11 @@ img.buy-img {
   margin-block: 30px;
 }
 
+
+.sort-ssm {
+  display: none;
+}
+
 .sort-title {
   display: flex;
   align-items: center;
@@ -492,6 +497,7 @@ label {
   align-items: center;
 }
 
+
 @media screen and (max-width: 425px) {
   .products {
     width: 100%;
@@ -545,9 +551,6 @@ label {
     align-items: start;
     width: 100%;
     max-width: 690px;
-  }
-
-  .title-2 {
   }
 
   .buy-img-container {
@@ -633,5 +636,10 @@ label {
   .sort-option {
     position: absolute;
     bottom: 0;
+  }
+
+
+  .sort-ssm {
+    display: flex;
   }
 }
