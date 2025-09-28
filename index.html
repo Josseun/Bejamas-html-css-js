@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEJAMAS APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div><img src="./img/Logo.png" alt=""></div>
+            <div class="cart">
+                <div id="cart-display">
+                    <button style="cursor: pointer;" onclick="toggleCart()">
+                        <img src="./img/Group 3.1.svg" alt="">
+                        <span id="count" class="cart-count">0</span></button>
+                </div>
+            </div>
+
+        </div>
+        <div style="width: 100%; position: relative;">
+            <hr>
+            <div id="cart-modal" style="
+            position: absolute; 
+            top:24px;
+            width:443px ;
+            display: none;
+            justify-content: right;
+            height: auto;
+            right: 0px;
+            z-index: 1000;
+        ">
+                <div style="
+                background: white; 
+                width: 90%; 
+                max-width: 400px; 
+                border:4px #E4E4E4 solid;
+                border-top: none;
+                overflow: hidden; 
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            ">
+                    <div id="cart-items" style="max-height: 400px; overflow-y: auto;">
+                        <p style="text-align: center; color: #666; padding: 2rem;  font-size: 23px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 500;">Your cart is empty</p>
+                    </div>
+
+
+                    <div style="padding: 1rem; border-top: 1px solid #eee;">
+                        <button onclick="clearCart()" style="
+                        width: 100%; 
+                        background: white; 
+                        color: #333; 
+                        border: 2px solid #333; 
+                        padding: 0.75rem; 
+                        border-radius: 4px; 
+                        cursor: pointer; 
+                        font-size: 23px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 500;
+                        text-transform: uppercase; 
+                        letter-spacing: 1px;
+                    ">CLEAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div id="hero-container">
+
+            </div>
+
+            <div class="hero-content">
+
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="title-1">
+                            About the Samurai King Resting
+                        </div>
+                        <div class="Pets-tag">
+                            Pets
+                        </div>
+                        <div>
+                            <div class="king-content">
+                                <p class="king-p1">
+                                    So how did the classical Latin become so incoherent? According to McClintock, a 15th
+                                    century typesetter likely scrambled part of Cicero's De Finibus in order to provide
+                                    placeholder text to mockup various fonts for a type specimen book.So how did the
+                                    classical Latin become so incoherent? According to McClintock, a 15th century
+                                    typesetter likely scrambled part of Cicero's De Finibus in order to provide
+                                    placeholder
+                                </p>
+                                <p class="king-p2">
+                                    text to mockup various fonts for a type specimen book.So how did the classical Latin
+                                    become so incoherent? According to McClintock.
+                                </p>
+                            </div>
+                            <div class="king-content-ssm">
+                                So how did the classical Latin become so incoherent? According to McClintock, a 15th
+                                century typesetter likely scrambled part of Cicero's De Finibus in order to provide
+                                placeholder text to mockup various fonts for a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="title-2">
+                            People also buy
+                        </div>
+                        <div class="buy-img-container">
+                            <img class="buy-img" src="./img/Architecture.jpg" alt="">
+                            <img class="buy-img" src="./img/Istanbul-turkey.jpg" alt="">
+                            <img class="buy-img" src="./img/egg-balloons.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="details">Details</p>
+                            <p class="detail">Size: 1020 x 1020 pixel</p>
+                            <p class="detail">Size: 15 mb</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="store-section">
+            <div class="store-nav">
+                <div class="sort-title">
+                    <div class="sort-title1">Photography</div>
+                    <div class="sort-title2">/</div>
+                    <div class="sort-title3">Premium Photos</div>
+                </div>
+                <div class="sort">
+                    <div class="Sort-by"><img class="arrows-sort" src="./img/arrows-sort.svg" alt="">
+                        <p class="Sort-by-name">Sort By</p>
+                    </div>
+                    <div class="Sort-price">
+                        <p class="Sort-price1">Price</p><img src="./img/Vector 16.png" alt="">
+                    </div>
+                </div>
+                <div class="sort-ssm">
+                    <button onclick="toggleSort()">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.8119 0H5.18805C2.32736 0 0 2.32736 0 5.18805V23.812C0 26.6726 2.32736 29 5.18805 29H23.812C26.6726 29 29 26.6726 29 23.8119V5.18805C29 2.32736 26.6726 0 23.8119 0ZM27.3008 23.8119C27.3008 25.7357 25.7357 27.3008 23.8119 27.3008H5.18805C3.26431 27.3008 1.69922 25.7357 1.69922 23.8119V5.18805C1.69922 3.26431 3.26431 1.69922 5.18805 1.69922H23.812C25.7357 1.69922 27.3008 3.26431 27.3008 5.18805V23.8119Z"
+                                fill="black" />
+                            <path
+                                d="M24.5103 6.3702H11.5701C11.2143 5.31357 10.2149 4.55017 9.03986 4.55017C7.86479 4.55017 6.86537 5.31357 6.50961 6.3702H4.48975C4.02054 6.3702 3.64014 6.7506 3.64014 7.21981C3.64014 7.68902 4.02054 8.06942 4.48975 8.06942H6.50966C6.86542 9.12605 7.86485 9.88946 9.03991 9.88946C10.215 9.88946 11.2144 9.12605 11.5702 8.06942H24.5103C24.9795 8.06942 25.3599 7.68902 25.3599 7.21981C25.3599 6.7506 24.9795 6.3702 24.5103 6.3702ZM9.03986 8.19024C8.50477 8.19024 8.06943 7.7549 8.06943 7.21981C8.06943 6.68473 8.50477 6.24939 9.03986 6.24939C9.57494 6.24939 10.0103 6.68473 10.0103 7.21981C10.0103 7.7549 9.57494 8.19024 9.03986 8.19024Z"
+                                fill="black" />
+                            <path
+                                d="M24.5103 13.6504H22.4904C22.1346 12.5937 21.1351 11.8303 19.9601 11.8303C18.7851 11.8303 17.7857 12.5937 17.4299 13.6504H4.48975C4.02054 13.6504 3.64014 14.0308 3.64014 14.5C3.64014 14.9692 4.02054 15.3496 4.48975 15.3496H17.4299C17.7857 16.4062 18.7852 17.1696 19.9602 17.1696C21.1352 17.1696 22.1347 16.4062 22.4904 15.3496H24.5103C24.9795 15.3496 25.3599 14.9692 25.3599 14.5C25.3599 14.0308 24.9795 13.6504 24.5103 13.6504ZM19.9602 15.4704C19.4251 15.4704 18.9897 15.035 18.9897 14.5C18.9897 13.9649 19.4251 13.5295 19.9602 13.5295C20.4953 13.5295 20.9306 13.9649 20.9306 14.5C20.9306 15.035 20.4953 15.4704 19.9602 15.4704Z"
+                                fill="black" />
+                            <path
+                                d="M24.5103 20.9306H15.2102C14.8545 19.874 13.855 19.1106 12.68 19.1106C11.5049 19.1106 10.5055 19.874 10.1497 20.9306H4.48975C4.02054 20.9306 3.64014 21.311 3.64014 21.7802C3.64014 22.2494 4.02054 22.6298 4.48975 22.6298H10.1497C10.5055 23.6865 11.5049 24.4499 12.68 24.4499C13.855 24.4499 14.8545 23.6865 15.2102 22.6298H24.5103C24.9795 22.6298 25.3599 22.2494 25.3599 21.7802C25.3599 21.311 24.9795 20.9306 24.5103 20.9306ZM12.68 22.7507C12.1449 22.7507 11.7096 22.3154 11.7096 21.7803C11.7096 21.2452 12.1449 20.8099 12.68 20.8099C13.2151 20.8099 13.6504 21.2452 13.6504 21.7802C13.6504 22.3153 13.2151 22.7507 12.68 22.7507Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+
+
+                </div>
+            </div>
+            <div class="store-Categories">
+                <aside>
+                    <div class="Category-section">
+                        <p class="Category-heading">Category</p>
+                        <div class="Category-selection">
+                            <div class="input-label">
+                                <input id="People" type="checkbox">
+                                <label for="People">People</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Premium" type="checkbox">
+                                <label for="Premium">Premium</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Pets" type="checkbox">
+                                <label for="Pets">Pets</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Food" type="checkbox">
+                                <label for="Food">Food</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Landmarks" type="checkbox">
+                                <label for="Landmarks">Landmarks</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Cities" type="checkbox">
+                                <label for="Cities">Cities</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="Nature" type="checkbox">
+                                <label for="Nature">Nature</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 200px;">
+                    <div class="Price-range-section">
+                        <p class="Price-range-heading">Price range</p>
+                        <div class="price-selection">
+                            <div class="input-label">
+                                <input id="" type="checkbox">
+                                <label for="">Lower than $20</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="" type="checkbox">
+                                <label for="">$20 - $100</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="" type="checkbox">
+                                <label for="">$100 - $200</label>
+                            </div>
+                            <div class="input-label">
+                                <input id="" type="checkbox">
+                                <label for="">More than $200</label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div id="products-container" class="products">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="sort-modal" class="sort-modal" style="
+         position: fixed; 
+            bottom: 0; 
+            padding-block: 20px;
+            left: 0; 
+            background-color: #eee;
+            /* background: rgba(0,0,0,0.5);  */
+            display: none; 
+            width: 100%;
+             flex-direction: column;
+            z-index: 1000; 
+            align-items: center; 
+            justify-content: center;">
+            <div style="padding-inline: 30px; width:100%;">
+                <div class="Category-section">
+                    <div style="display: flex;
+                    margin-bottom: 10px;
+                            justify-content: space-between;
+                            align-items: center;">
+                        <p style="  font-size: 34px;
+                        line-height: 100%;
+                        font-family: Archivo-Regular; 
+                        font-weight: 700;">Filter</p>
+                        <p onclick="closeSort()"><svg width="18" height="18" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2L20 20" stroke="black" stroke-width="4" />
+                                <path d="M2 20L20 2" stroke="black" stroke-width="4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="Category-selection">
+                        <div class="input-label">
+                            <input id="People" type="checkbox">
+                            <label for="People">People</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Premium" type="checkbox">
+                            <label for="Premium">Premium</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Pets" type="checkbox">
+                            <label for="Pets">Pets</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Food" type="checkbox">
+                            <label for="Food">Food</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Landmarks" type="checkbox">
+                            <label for="Landmarks">Landmarks</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Cities" type="checkbox">
+                            <label for="Cities">Cities</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="Nature" type="checkbox">
+                            <label for="Nature">Nature</label>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 200px; height: 0; margin-block: 10px; border:1px solid #C2C2C2;">
+                <div class="Price-range-section">
+                    <p class="Price-range-heading">Price range</p>
+                    <div class="price-selection">
+                        <div class="input-label">
+                            <input id="" type="checkbox">
+                            <label for="">Lower than $20</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="" type="checkbox">
+                            <label for="">$20 - $100</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="" type="checkbox">
+                            <label for="">$100 - $200</label>
+                        </div>
+                        <div class="input-label">
+                            <input id="" type="checkbox">
+                            <label for="">More than $200</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 414px;
+            padding: 20px;
+            border: 4px solid #E4E4E4;
+            background-color: #FFFFFF;
+            display: flex; 
+            justify-content: space-around;
+            align-items: center;" class="sort-option">
+                <div style="width: 177px; 
+                height: 48px;
+                        background: white; 
+                        color: #333; 
+                        border: 3px solid #000000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                       cursor: pointer; 
+                        font-size: 23px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 500;
+                       ">CLEAR</div>
+                <div style="width: 177px; 
+                height: 48px;
+                        background: black; 
+                        color: white; 
+                                               display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                       cursor: pointer; 
+                        font-size: 23px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 500;
+                       ">SAVE</div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around; align-items: center; width: 187px;">
+            <p style="  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400; color:#B4B4B4;">&#60;</p>
+            <p style="  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400; color:#B4B4B4;">1</p>
+            <p style="  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400; color:#B4B4B4;">2</p>
+            <p style="color: black;  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400;">3</p>
+            <p style="  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400; color:#B4B4B4;">4</p>
+            <p style="  font-size: 29px;
+                        font-family: Archivo-Regular; 
+                        font-weight: 400; color:#B4B4B4;">&#62;</p>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
